@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tarifas | Interbus</title>
+
+    <meta name="description" content="Consultá las tarifas de Interbus entre Rosario, Acebal, Álvarez y Albarellos.">
+    <link rel="icon" href="/img/logo-interbus.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tarifas.css">
+</head>
+
+<body>
+
+    
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-interbus.png" alt="Interbus - Viaja con vos">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html" class="active">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+                <a href="choferes.html">
+                    Choferes
+                </a>
+                <a href="taller.html">
+                    Taller
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    
+    <main>
+
+        <section class="fare-section">
+
+            <div class="container">
+
+                <div class="fare-header">
+
+                    <span class="section-label">
+                        TARIFAS
+                    </span>
+
+                    <h1>
+                        Tarifas por recorrido
+                    </h1>
+
+                    <p>
+                        Buscá tu origen en la columna de la izquierda y tu
+                        destino en la fila de arriba. Donde se cruzan está
+                        el precio del boleto.
+                    </p>
+
+                    <nav class="schedule-jump" aria-label="Ir a un recorrido">
+                        <a href="#acebal">Acebal</a>
+                        <a href="#alvarez">Álvarez</a>
+                        <a href="#albarellos">Albarellos</a>
+                    </nav>
+
+                </div>
+
+
+                <!-- TARIFAS (generadas por tarifas.js) -->
+                <div id="faresContainer"></div>
+
+
+                <div class="fare-note">
+
+                    <strong>
+                        Importante
+                    </strong>
+
+                    <p>
+                        Las tarifas pueden estar sujetas a modificaciones.
+                        Verificá siempre la información antes de realizar
+                        tu viaje.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    
+    <footer class="footer" id="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="img/logo-interbus.png" alt="Interbus">
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Interbus SRL. Todos los derechos reservados.
+                </p>
+                <p>
+                    Desarrollado por <a href="https://www.linkedin.com/in/nehuenpeyrano/" target="_blank"
+                        rel="noopener noreferrer">Nehuén Peyrano</a>.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    
+    <script src="js/main.js"></script>
+    <script src="js/tarifas.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interbus | Viaja con vos</title>
+
+    <meta name="description" content="Interbus - Información de horarios, recorridos, paradas y tarifas.">
+    <link rel="icon" href="/img/logo-interbus.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-interbus.png" alt="Interbus - Viaja con vos">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html" class="active">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+                <a href="choferes.html">
+                    Choferes
+                </a>
+                <a href="taller.html">
+                    Taller
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">
+                        INTERBUS
+                    </span>
+
+                    <h1>
+                        Viaja con vos.
+                    </h1>
+
+                    <p>
+                        Consultá horarios, recorridos, paradas y tarifas
+                        de nuestros servicios de transporte.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#horarios" class="btn btn-primary">
+                            Ver horarios
+                        </a>
+
+                        <a href="#recorridos" class="btn btn-secondary">
+                            Ver recorridos
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img src="img/logo-interbus.png" alt="Interbus">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="quick-access">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        INFORMACIÓN
+                    </span>
+
+                    <h2>
+                        ¿Qué estás buscando?
+                    </h2>
+
+                    <p>
+                        Accedé rápidamente a la información que necesitás.
+                    </p>
+
+                </div>
+
+
+                <div class="cards">
+
+                    <a href="#horarios" class="info-card">
+
+                        <div class="card-icon">
+                            🕐
+                        </div>
+
+                        <h3>
+                            Horarios
+                        </h3>
+
+                        <p>
+                            Consultá las frecuencias de nuestros servicios.
+                        </p>
+
+                        <span class="card-link">
+                            Consultar horarios →
+                        </span>
+
+                    </a>
+
+                    <a href="#recorridos" class="info-card">
+
+                        <div class="card-icon">
+                            🚌
+                        </div>
+
+                        <h3>
+                            Recorridos y paradas
+                        </h3>
+
+                        <p>
+                            Conocé nuestros recorridos y las diferentes paradas.
+                        </p>
+
+                        <span class="card-link">
+                            Ver recorridos →
+                        </span>
+
+                    </a>
+
+                    <a href="#tarifas" class="info-card">
+
+                        <div class="card-icon">
+                            $
+                        </div>
+
+                        <h3>
+                            Tarifas
+                        </h3>
+
+                        <p>
+                            Consultá los valores actuales de nuestros servicios.
+                        </p>
+
+                        <span class="card-link">
+                            Ver tarifas →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="arrival" id="cuando-llega">
+
+            <div class="container">
+
+                <div class="arrival-box">
+
+                    <div class="arrival-content">
+
+                        <span class="section-label">
+                            CONSULTA
+                        </span>
+
+                        <h2>
+                            ¿Cuándo llega Interbus?
+                        </h2>
+
+                        <p>
+                            Consultá en tiempo real dónde se encuentra tu colectivo
+                            y cuánto falta para que llegue a tu parada.
+                        </p>
+
+                        <a href="cuando-llega.html" class="btn btn-primary">
+                            Conocé la aplicación
+                        </a>
+
+                    </div>
+
+                    <div class="arrival-decoration">
+                        <span>🚌</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="horarios">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        HORARIOS
+                    </span>
+
+                    <h2>
+                        Consultá nuestros horarios
+                    </h2>
+
+                    <p>
+                        Seleccioná el recorrido y el día en que querés viajar.
+                    </p>
+
+                </div>
+
+                <div class="schedule-filters">
+
+                    <div class="filter-group">
+
+                        <label for="routeSelect">
+                            Recorrido
+                        </label>
+
+                        <select id="routeSelect">
+
+                            <option value="alvarez">
+                                Álvarez
+                            </option>
+
+                            <option value="acebal">
+                                Acebal
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="directionSelect">
+                            Dirección
+                        </label>
+
+                        <select id="directionSelect">
+
+                            <option value="ida">
+                                Hacia Rosario
+                            </option>
+
+                            <option value="vuelta">
+                                Desde Rosario
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="daySelect">
+                            Día
+                        </label>
+
+                        <select id="daySelect">
+
+                            <option value="week">
+                                Lunes a viernes
+                            </option>
+
+                            <option value="saturday">
+                                Sábados
+                            </option>
+
+                            <option value="sunday">
+                                Domingos y feriados
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="schedule-result">
+
+                    <div class="schedule-result-header">
+
+                        <div>
+
+                            <span class="schedule-label">
+                                SERVICIO
+                            </span>
+
+                            <h3 id="scheduleTitle">
+                                Álvarez → Rosario
+                            </h3>
+
+                        </div>
+
+                        <span class="schedule-day" id="scheduleDay">
+                            Lunes a viernes
+                        </span>
+
+                    </div>
+
+
+                    <div class="schedule-times" id="scheduleTimes">
+                        <!-- JS inserta los horarios -->
+                    </div>
+
+
+                    <div class="schedule-note">
+
+                        <strong>
+                            Importante:
+                        </strong>
+
+                        Los horarios pueden estar sujetos a modificaciones.
+                        Consultá la información vigente antes de viajar.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-light" id="recorridos">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        RECORRIDOS
+                    </span>
+
+                    <h2>
+                        Recorridos y paradas
+                    </h2>
+
+                    <p>
+                        Conocé los principales recorridos de Interbus.
+                    </p>
+
+                </div>
+
+
+                <div class="route-cards">
+
+                    <article class="route-card">
+
+                        <div class="route-icon">
+                            🚌
+                        </div>
+
+                        <h3>
+                            Álvarez → Rosario
+                        </h3>
+
+                        <p>
+                            Consultá el recorrido y las paradas
+                            correspondientes al servicio.
+                        </p>
+
+                        <a href="recorridos.html#alvarez" class="text-button">
+                            Ver recorrido →
+                        </a>
+
+                    </article>
+
+
+                    <article class="route-card">
+
+                        <div class="route-icon">
+                            🚌
+                        </div>
+
+                        <h3>
+                            Acebal → Rosario
+                        </h3>
+
+                        <p>
+                            Consultá el recorrido y las paradas
+                            correspondientes al servicio.
+                        </p>
+
+                        <a href="recorridos.html#acebal" class="text-button">
+                            Ver recorrido →
+                        </a>
+
+                    </article>
+
+
+                    <article class="route-card">
+
+                        <div class="route-icon">
+                            📍
+                        </div>
+
+                        <h3>
+                            Paradas en Rosario
+                        </h3>
+
+                        <p>
+                            Encontrá las diferentes paradas
+                            disponibles dentro de Rosario.
+                        </p>
+
+                        <a href="recorridos.html#paradas-rosario" class="text-button">
+                            Ver paradas →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="tarifas">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        TARIFAS
+                    </span>
+
+                    <h2>
+                        Tarifas
+                    </h2>
+
+                    <p>
+                        Información sobre los valores de nuestros servicios.
+                    </p>
+
+                </div>
+
+
+                <div class="prices">
+
+                    <a href="tarifas.html#alvarez" class="price-row">
+                        <span>Álvarez</span>
+                        <strong>Ver tarifa →</strong>
+                    </a>
+
+
+                    <a href="tarifas.html#acebal" class="price-row">
+                        <span>Acebal</span>
+                        <strong>Ver tarifa →</strong>
+                    </a>
+
+                    <a href="tarifas.html#albarellos" class="price-row">
+                        <span>Albarellos</span>
+                        <strong>Ver tarifa →</strong>
+                    </a>
+
+                </div>
+
+
+                <p class="update-info">
+                    Los valores pueden estar sujetos a modificaciones.
+                    Consultá la tarifa vigente antes de viajar.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="notice-section">
+
+            <div class="container">
+
+                <div class="notice">
+
+                    <div class="notice-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <span class="section-label">
+                            AVISO AL PASAJERO
+                        </span>
+
+                        <h2>
+                            Cuidemos nuestras unidades
+                        </h2>
+
+                        <p>
+                            Interbus solicita la colaboración de todos los
+                            pasajeros para mantener la higiene y el buen estado
+                            de nuestras unidades.
+                        </p>
+
+                        <p>
+                            Ante situaciones irregulares que afecten el
+                            mantenimiento de la higiene, agradecemos informar
+                            al chofer inmediatamente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contacto">
+
+            <div class="container">
+
+                <div class="contact-content">
+
+                    <div>
+
+                        <span class="section-label">
+                            CONTACTO
+                        </span>
+
+                        <h2>
+                            ¿Necesitás comunicarte con Interbus?
+                        </h2>
+
+                        <p>
+                            Encontrá nuestros datos de contacto o escribinos
+                            para realizar una consulta.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-data">
+
+                        <div class="contact-item">
+
+                            <span>
+                                Dirección
+                            </span>
+
+                            <strong>
+                                Ruta 18 Km 3,5
+                            </strong>
+
+                            <p>
+                                Alvear, Santa Fe, Argentina
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span>
+                                Teléfono
+                            </span>
+
+                            <a href="tel:03415188484">
+                                0341-5188484
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span>
+                                Email
+                            </span>
+
+                            <a href="mailto:interbusweb@hotmail.com">
+                                interbusweb@hotmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="img/logo-interbus.png" alt="Interbus">
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Interbus SRL. Todos los derechos reservados.
+                </p>
+                <p>
+                    Desarrollado por <a href="https://www.linkedin.com/in/nehuenpeyrano/" target="_blank"
+                        rel="noopener noreferrer">Nehuén Peyrano</a>.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+/* =========================================================
+   CONTACTO
+========================================================= */
+
+.contact-section {
+    padding: 70px 0 90px;
+    background: var(--white);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.contact-header {
+    max-width: 760px;
+    margin-bottom: 45px;
+}
+
+.contact-header h1 {
+    margin-bottom: 14px;
+    color: var(--blue-dark);
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.contact-header p {
+    max-width: 650px;
+    color: var(--gray-500);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DISTRIBUCIÓN
+========================================================= */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =========================================================
+   FORMULARIO
+========================================================= */
+
+.contact-form-box {
+    padding: 35px;
+
+    background: var(--white);
+
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.contact-form-box h2 {
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+    font-size: 1.6rem;
+}
+
+.form-description {
+    margin-bottom: 30px;
+    color: var(--gray-500);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CAMPOS
+========================================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: var(--orange);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    color: var(--black);
+    background: var(--white);
+
+    border: 1px solid var(--gray-300);
+    border-radius: 9px;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input {
+    min-height: 48px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--gray-500);
+    opacity: 0.7;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: var(--blue-medium);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--blue);
+
+    box-shadow:
+        0 0 0 3px rgba(29, 93, 143, 0.12);
+}
+
+
+/* =========================================================
+   ACLARACIÓN CONTACTO
+========================================================= */
+
+.contact-requirement {
+    margin-top: -8px;
+    margin-bottom: 22px;
+
+    color: var(--gray-500);
+
+    font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   PRIVACIDAD
+========================================================= */
+
+.privacy-text {
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    color: var(--gray-500);
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.privacy-text a {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.privacy-text a:hover {
+    color: var(--blue-dark);
+}
+
+
+/* =========================================================
+   MENSAJES DEL FORMULARIO
+========================================================= */
+
+.form-message {
+    display: none;
+
+    margin-bottom: 18px;
+    padding: 12px 14px;
+
+    border-radius: 8px;
+
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.form-message.visible {
+    display: block;
+}
+
+.form-error {
+    color: #8a3b12;
+    background: #fff4ec;
+    border: 1px solid #f1d0ba;
+}
+
+.form-success {
+    color: #24613b;
+    background: #eef8f1;
+    border: 1px solid #cce6d4;
+}
+
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+
+.form-submit {
+    width: 100%;
+}
+
+
+/* =========================================================
+   INFORMACIÓN DE CONTACTO
+========================================================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-card,
+.contact-data,
+.contact-note {
+    padding: 25px;
+
+    background: var(--gray-50);
+
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+}
+
+.contact-info-card h2 {
+    margin: 8px 0 10px;
+
+    color: var(--blue-dark);
+    font-size: 1.4rem;
+}
+
+.contact-info-card p {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DATOS
+========================================================= */
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.contact-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.contact-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.contact-item>span {
+    display: block;
+    margin-bottom: 5px;
+
+    color: var(--gray-500);
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--blue-dark);
+    font-size: 0.95rem;
+}
+
+.contact-item p {
+    margin-top: 3px;
+    color: var(--gray-500);
+    font-size: 0.85rem;
+}
+
+.contact-item a {
+    color: var(--blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: var(--blue-dark);
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   AVISO
+========================================================= */
+
+.contact-note {
+    border-left: 4px solid var(--orange);
+}
+
+.contact-note strong {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--blue-dark);
+}
+
+.contact-note p {
+    color: var(--gray-500);
+    font-size: 0.85rem;
+}
+
+/* =========================================================
+   AGREGAR AL FINAL DE css/contacto.css
+   BOTÓN "POLÍTICA DE PRIVACIDAD" + MODAL
+========================================================= */
+
+.privacy-link {
+    padding: 0;
+
+    color: var(--blue);
+    background: none;
+    border: none;
+
+    font: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+.privacy-link:hover {
+    color: var(--blue-dark);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
+/* ---------- Modal ---------- */
+
+.modal {
+    width: min(720px, calc(100% - 32px));
+    max-height: calc(100vh - 48px);
+
+    margin: auto;
+    padding: 0;
+
+    color: var(--black);
+    background: var(--white);
+
+    border: none;
+    border-radius: var(--radius);
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+}
+
+.modal[open] {
+    display: flex;
+}
+
+.modal::backdrop {
+    background: rgba(10, 25, 40, 0.6);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-height: calc(100vh - 48px);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.modal-header h2 {
+    margin: 0;
+
+    color: var(--blue-dark);
+    font-size: 1.35rem;
+}
+
+.modal-close {
+    width: 38px;
+    height: 38px;
+
+    color: var(--gray-500);
+    background: none;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 1.8rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: var(--blue-dark);
+    background: var(--gray-50);
+}
+
+.modal-body {
+    padding: 24px;
+
+    overflow-y: auto;
+}
+
+.modal-body h3 {
+    margin: 0 0 10px;
+
+    color: var(--blue-dark);
+    font-size: 1.05rem;
+}
+
+.modal-body h3:not(:first-child) {
+    margin-top: 28px;
+}
+
+.modal-body p {
+    margin: 0 0 14px;
+
+    color: var(--gray-500);
+    font-size: 0.92rem;
+    line-height: 1.7;
+}
+
+.modal-body a {
+    color: var(--blue);
+    text-decoration: underline;
+    word-break: break-word;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 16px 24px;
+
+    border-top: 1px solid var(--gray-200);
+}
+
+.contact-status {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.contact-status-success {
+    background: #eaf7ef;
+    color: #216b3a;
+    border: 1px solid #b9e3c7;
+}
+
+.contact-status-error {
+    background: #fff1f1;
+    color: #9b2c2c;
+    border: 1px solid #f0bcbc;
+}
+
+button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-info-card {
+        grid-column: 1 / -1;
+    }
+
+    .contact-note {
+        grid-column: 1 / -1;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 50px 0 65px;
+    }
+
+    .contact-header {
+        margin-bottom: 35px;
+    }
+
+    .contact-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .contact-header p {
+        font-size: 1rem;
+    }
+
+    .contact-form-box {
+        padding: 24px 18px;
+    }
+
+    .contact-info {
+        display: flex;
+    }
+
+    .contact-info-card,
+    .contact-data,
+    .contact-note {
+        padding: 20px;
+    }
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+}

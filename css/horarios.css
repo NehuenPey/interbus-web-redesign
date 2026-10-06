@@ -1,0 +1,541 @@
+/* =========================================================
+   HEADER - HORARIOS
+========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--gray-200);
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav a {
+    position: relative;
+    padding: 10px 12px;
+    color: var(--gray-700);
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.nav a:hover {
+    color: var(--blue);
+}
+
+.nav a.active {
+    color: var(--blue);
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   HORARIOS
+========================================================= */
+
+.schedule-section {
+    padding: 70px 0 90px;
+    background: var(--white);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.schedule-box-header {
+    margin-bottom: 45px;
+}
+
+.schedule-box-header h1 {
+    max-width: 850px;
+    margin-bottom: 14px;
+    color: var(--blue-dark);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.schedule-box-header p {
+    max-width: 700px;
+    margin-bottom: 25px;
+    color: var(--gray-500);
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   BOTONES DE NAVEGACIÓN
+========================================================= */
+
+.schedule-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.schedule-jump a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 18px;
+
+    color: var(--blue);
+    background: var(--blue-light);
+
+    border: 1px solid #d6eaf3;
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.schedule-jump a:hover {
+    color: var(--white);
+    background: var(--blue);
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   LOCALIDADES
+========================================================= */
+
+.schedule-locality {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px;
+}
+
+.schedule-locality:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-locality-title {
+    margin-bottom: 25px;
+    padding-bottom: 14px;
+
+    color: var(--blue-dark);
+
+    border-bottom: 3px solid var(--blue);
+
+    font-size: 2rem;
+}
+
+
+/* =========================================================
+   TEMPORADAS
+========================================================= */
+
+.schedule-season {
+    margin-bottom: 45px;
+    padding: 28px;
+
+    background: var(--gray-50);
+
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+}
+
+.schedule-season:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-season-title {
+    margin-bottom: 3px;
+    color: var(--blue-dark);
+    font-size: 1.5rem;
+}
+
+.schedule-validity {
+    margin-bottom: 30px;
+    color: var(--gray-500);
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   DÍAS
+========================================================= */
+
+.schedule-day-block {
+    margin-bottom: 35px;
+}
+
+.schedule-day-block:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-day-title {
+    margin-bottom: 15px;
+    color: var(--gray-700);
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   IDA / VUELTA
+========================================================= */
+
+.schedule-directions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.schedule-direction {
+    padding: 20px;
+
+    background: var(--white);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(18, 59, 99, 0.05);
+}
+
+.schedule-direction-title {
+    margin-bottom: 15px;
+
+    color: var(--blue);
+
+    font-size: 0.95rem;
+    font-weight: 800;
+
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   HORARIOS INDIVIDUALES
+========================================================= */
+
+.schedule-times {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(82px, 1fr));
+    gap: 8px;
+}
+
+.schedule-time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    padding: 7px 8px;
+
+    color: var(--blue-dark);
+    background: var(--blue-light);
+
+    border: 1px solid #d6eaf3;
+    border-radius: 7px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.schedule-time:hover {
+    background: #dff1f8;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   NOTA DE HORARIOS
+========================================================= */
+
+.schedule-note {
+    margin-top: 40px;
+    padding: 20px;
+
+    background: var(--gray-50);
+
+    border-left: 4px solid var(--orange);
+    border-radius: 8px;
+}
+
+.schedule-note strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--blue-dark);
+}
+
+.schedule-note p {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   AVISO
+========================================================= */
+
+.notice-box {
+    display: flex;
+    gap: 18px;
+
+    margin-top: 25px;
+    padding: 24px;
+
+    background: #fff8f1;
+
+    border: 1px solid #f5dfcc;
+    border-radius: var(--radius);
+}
+
+.notice-icon {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--white);
+    background: var(--orange);
+
+    border-radius: 50%;
+
+    font-weight: 800;
+}
+
+.notice-box h3 {
+    margin-bottom: 5px;
+    color: var(--blue-dark);
+    font-size: 1rem;
+}
+
+.notice-box p {
+    color: var(--gray-700);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   HORARIOS DE URANGA
+   ========================================== */
+
+.uranga-direction {
+    margin-top: 30px;
+}
+
+.uranga-direction .schedule-day-title {
+    margin-bottom: 14px;
+}
+
+.uranga-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #d9dfe2;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.uranga-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.uranga-table th,
+.uranga-table td {
+    padding: 14px 12px;
+    border-right: 1px solid #d9dfe2;
+    text-align: center;
+}
+
+.uranga-table th:last-child,
+.uranga-table td:last-child {
+    border-right: 0;
+}
+
+.uranga-table th {
+    background: #f1f5f7;
+    color: #26343c;
+    font-size: .78rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.uranga-table td {
+    color: #173f63;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.uranga-table tbody tr {
+    border-top: 1px solid #d9dfe2;
+}
+
+@media (max-width: 800px) {
+    .uranga-direction {
+        margin-top: 24px;
+    }
+
+    .uranga-table th,
+    .uranga-table td {
+        padding: 12px 10px;
+    }
+}
+
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-content {
+        min-height: 70px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 12px 20px;
+
+        background: var(--white);
+        border-bottom: 1px solid var(--gray-200);
+
+        box-shadow: var(--shadow);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 13px 10px;
+    }
+
+    .nav a.active::after {
+        display: none;
+    }
+
+    .schedule-directions {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .schedule-section {
+        padding: 50px 0 65px;
+    }
+
+    .schedule-box-header {
+        margin-bottom: 35px;
+    }
+
+    .schedule-box-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .schedule-box-header p {
+        font-size: 1rem;
+    }
+
+    .schedule-locality {
+        margin-bottom: 45px;
+    }
+
+    .schedule-locality-title {
+        font-size: 1.7rem;
+    }
+
+    .schedule-season {
+        padding: 20px 15px;
+    }
+
+    .schedule-season-title {
+        font-size: 1.3rem;
+    }
+
+    .schedule-direction {
+        padding: 16px;
+    }
+
+    .schedule-times {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+    }
+
+    .schedule-time {
+        min-height: 42px;
+        padding: 6px 3px;
+        font-size: 0.82rem;
+    }
+
+    .notice-box {
+        align-items: flex-start;
+        padding: 20px 16px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULARES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .schedule-times {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

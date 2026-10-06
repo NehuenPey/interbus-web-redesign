@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto | Interbus</title>
+
+    <meta name="description" content="Contactate con Interbus mediante nuestro formulario de contacto.">
+
+    <link rel="icon" href="/img/logo-interbus.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-interbus.png" alt="Interbus - Viaja con vos">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html" class="active">
+                    Contacto
+                </a>
+
+                <a href="choferes.html">
+                    Choferes
+                </a>
+
+                <a href="taller.html">
+                    Taller
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+    
+        <section class="contact-section">
+
+            <div class="container">
+
+                <div class="contact-header">
+
+                    <span class="section-label">
+                        CONTACTO
+                    </span>
+
+                    <h1>
+                        ¿Necesitás comunicarte con Interbus?
+                    </h1>
+
+                    <p>
+                        Completá el siguiente formulario con tus datos
+                        y tu consulta. Nos contactaremos con vos en breve.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-layout">
+
+                    <div class="contact-form-box">
+
+                        <h2>
+                            Envíanos tu consulta
+                        </h2>
+
+                        <p class="form-description">
+                            Ingresá tu nombre y al menos un medio de contacto.
+                            Los campos marcados con <strong>*</strong> son obligatorios.
+                        </p>
+
+
+                        <form id="contactForm" novalidate>
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Nombre <span>*</span>
+                                </label>
+
+                                <input type="text" id="name" name="name" placeholder="Ingresá tu nombre"
+                                    autocomplete="name" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Dirección de email
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="ejemplo@email.com"
+                                    autocomplete="email">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Número de teléfono
+                                </label>
+
+                                <input type="tel" id="phone" name="phone" placeholder="0341 1234567" autocomplete="tel">
+
+                            </div>
+
+
+                            <p class="contact-requirement">
+                                Ingresá una dirección de email o un número de teléfono.
+                            </p>
+
+                            <div class="form-group">
+
+                                <label for="message">
+                                    Mensaje <span>*</span>
+                                </label>
+
+                                <textarea id="message" name="message" rows="7" placeholder="Escribí tu consulta..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="privacy-text">
+
+                                Se aplica nuestra
+
+                                <button type="button" class="privacy-link" id="openPrivacy" aria-haspopup="dialog"
+                                    aria-controls="privacyModal">
+                                    Política de privacidad
+                                </button>.
+
+                            </div>
+
+                            <div class="form-message form-error" id="formError" role="alert" aria-live="polite"></div>
+
+                            <div class="form-message form-success" id="formSuccess" role="status" aria-live="polite">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Enviar consulta
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- ================= INFORMACIÓN ================= -->
+
+                    <aside class="contact-info">
+
+                        <div class="contact-note">
+
+                            <strong>
+                                Atención
+                            </strong>
+
+                            <p>
+                                Los campos marcados con <strong>*</strong> son obligatorios.
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-info-card">
+
+                            <span class="section-label">
+                                INTERBUS
+                            </span>
+
+                            <h2>
+                                También podés contactarnos
+                            </h2>
+
+                            <p>
+                                Si preferís comunicarte directamente,
+                                encontrá nuestros principales datos de contacto.
+                            </p>
+
+                        </div>
+
+
+                        <div class="contact-data">
+
+                            <div class="contact-item">
+
+                                <span>
+                                    Dirección
+                                </span>
+
+                                <strong>
+                                    Ruta 18 Km 3,5
+                                </strong>
+
+                                <p>
+                                    Alvear, Santa Fe, Argentina
+                                </p>
+
+                            </div>
+
+
+                            <div class="contact-item">
+
+                                <span>
+                                    Teléfono
+                                </span>
+
+                                <a href="tel:03415188484">
+                                    0341-5188484
+                                </a>
+
+                            </div>
+
+
+                            <div class="contact-item">
+
+                                <span>
+                                    Email
+                                </span>
+
+                                <a href="mailto:interbusweb@hotmail.com">
+                                    interbusweb@hotmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+     <!-- modal -->
+
+    <dialog class="modal" id="privacyModal" aria-labelledby="privacyTitle">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2 id="privacyTitle">
+                    Política de privacidad
+                </h2>
+
+                <button type="button" class="modal-close" data-close-modal aria-label="Cerrar">
+                    &times;
+                </button>
+
+            </div>
+
+
+            <div class="modal-body">
+
+                <h3>
+                    Protección contra el spam con Google reCAPTCHA
+                </h3>
+
+                <p>
+                    Hemos implementado Google reCAPTCHA en formularios en nuestro sitio web para verificar si los
+                    datos ingresados en los formularios provienen de visitantes humanos o de máquinas o programas
+                    automatizados, también conocidos como "bots". Esta herramienta analiza automáticamente el
+                    comportamiento de los visitantes del sitio web tan pronto como interactúan con él, utilizando
+                    diversas informaciones como la dirección IP, la duración de la visita y los movimientos del
+                    ratón. Los datos procesados incluyen datos de uso como el sitio web al que se accede, la fecha y
+                    hora de acceso y los movimientos del ratón, así como datos de comunicación como direcciones IP,
+                    tipo de navegador y sistema operativo. Este procesamiento está dirigido a los visitantes del
+                    sitio web y a los usuarios de servicios en línea. El principal objetivo de este procesamiento es
+                    prevenir el mal uso de nuestro formulario de contacto, mejorando así la seguridad. La base legal
+                    para esto es nuestro interés legítimo según el Art. 6 para. 1 p. 1 lit. f. GDPR. Los
+                    destinatarios de los datos incluyen a Google Ireland Ltd, con sede en Google Building Gordon
+                    House, Barrow St, Dublin 4, Irlanda,
+                    (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                        https://policies.google.com/privacy
+                    </a>)
+                    y nuestro proveedor de hosting de sitios web. Mientras sus datos personales se procesan dentro
+                    de la UE, el tiempo de retención para los datos procesados es determinado por Google Ireland
+                    Limited. Puede encontrar información adicional en la política de privacidad de Google reCAPTCHA:
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                        https://policies.google.com/privacy
+                    </a>
+                </p>
+
+
+                <h3>
+                    Análisis del sitio web (Creator Statistics)
+                </h3>
+
+                <p>
+                    Cuando visitas nuestro sitio web, recopilamos información sobre tu uso a través de una
+                    herramienta de análisis web proporcionada por nuestro servicio de alojamiento. Esta herramienta
+                    recopila y combina tu dirección IP y tu agente de usuario, los acorta y almacena estos datos
+                    utilizando una función hash. Este proceso crea un identificador de visitante cifrado con un
+                    valor generado aleatoriamente (SALT) que cambia cada 24 horas. Este método garantiza que tu
+                    dirección IP no pueda reconstruirse a partir del identificador de visitante almacenado,
+                    manteniendo así tu anonimato. Además, no fusionamos esta información con ningún otro dato y sólo
+                    se almacena en el servidor del proveedor de alojamiento.
+                </p>
+
+                <p>
+                    También procesamos datos de análisis web, datos HTTP y datos de perfil de análisis web. La
+                    herramienta de análisis web que utilizamos crea y almacena un perfil de análisis web, que
+                    incluye detalles sobre tu uso del sitio web, como páginas vistas, frecuencia de visitas, tiempo
+                    empleado en cada página y el agente de usuario de tu dispositivo. Esto incluye datos de uso
+                    (como páginas web visitadas y tiempos de acceso) y datos de comunicación (como tipo de navegador,
+                    sistema operativo y direcciones IP).
+                </p>
+
+                <p>
+                    Nuestro propósito al procesar estos datos es analizar el comportamiento del usuario de forma
+                    agregada para mejorar la presentación y el contenido del sitio web. La base jurídica de este
+                    tratamiento es nuestro interés legítimo (Art. 6 párr. 1 lit. (f) GDPR), en particular para
+                    realizar mediciones web con el fin de mejorar nuestros productos y nuestro sitio web.
+                </p>
+
+                <p>
+                    Los datos recogidos se comparten con nuestro proveedor de alojamiento web y se procesan dentro
+                    de la UE.
+                </p>
+
+            </div>
+
+
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-primary" data-close-modal>
+                    Entendido
+                </button>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+
+    
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="img/logo-interbus.png" alt="Interbus">
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Interbus SRL. Todos los derechos reservados.
+                </p>
+
+                <p>
+                    Desarrollado por
+                    <a href="https://www.linkedin.com/in/nehuenpeyrano/" target="_blank" rel="noopener noreferrer">
+                        Nehuén Peyrano
+                    </a>.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+
+</body>
+
+</html>

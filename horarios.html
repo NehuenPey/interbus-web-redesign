@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Horarios | Interbus</title>
+
+    <meta name="description" content="Consultá los horarios de Interbus para Álvarez y Acebal.">
+    <link rel="icon" href="/img/logo-interbus.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/horarios.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="logo">
+                <img src="img/logo-interbus.png" alt="Interbus - Viaja con vos">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html" class="active">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+                <a href="choferes.html">
+                    Choferes
+                </a>
+                <a href="taller.html">
+                    Taller
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="schedule-section">
+
+            <div class="container">
+
+                <div class="schedule-box-header">
+
+                    <span class="section-label">
+                        HORARIOS
+                    </span>
+
+                    <h1>
+                        Horarios de Acebal y Álvarez
+                    </h1>
+
+                    <p>
+                        Consultá todos los horarios de ida y vuelta,
+                        habituales y de vacaciones.
+                    </p>
+
+                    <nav class="schedule-jump" aria-label="Ir a una localidad">
+                        <a href="#acebal">Acebal</a>
+                        <a href="#alvarez">Álvarez</a>
+                        <a href="#uranga">Uranga</a>
+                    </nav>
+
+                </div>
+
+
+                <!-- HORARIOS (generados por horarios.js) -->
+                <div id="schedulesContainer"></div>
+
+
+                <div class="schedule-note">
+
+                    <strong>
+                        Importante
+                    </strong>
+
+                    <p>
+                        Los horarios pueden estar sujetos
+                        a modificaciones. Verificá siempre
+                        la información antes de realizar
+                        tu viaje.
+                    </p>
+
+                </div>
+
+
+                <div class="notice-box">
+
+                    <div class="notice-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Información importante
+                        </h3>
+
+                        <p>
+                            Los horarios publicados corresponden
+                            a los servicios informados por Interbus.
+                            La circulación puede verse afectada por
+                            situaciones extraordinarias, tránsito
+                            u otras circunstancias del servicio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="img/logo-interbus.png" alt="Interbus">
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Inicio
+                </a>
+
+                <a href="horarios.html">
+                    Horarios
+                </a>
+
+                <a href="cuando-llega.html">
+                    ¿Cuándo llega?
+                </a>
+
+                <a href="recorridos.html">
+                    Recorridos
+                </a>
+
+                <a href="tarifas.html">
+                    Tarifas
+                </a>
+
+                <a href="sube.html">
+                    SUBE
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 Interbus SRL. Todos los derechos reservados.
+                </p>
+                <p>
+                    Desarrollado por <a href="https://www.linkedin.com/in/nehuenpeyrano/" target="_blank"
+                        rel="noopener noreferrer">Nehuén Peyrano</a>.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/horarios.js"></script>
+
+</body>
+
+</html>

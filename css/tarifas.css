@@ -1,0 +1,479 @@
+/* =========================================================
+   HEADER - TARIFAS
+   (mismo bloque que horarios.css)
+========================================================= */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--gray-200);
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav a {
+    position: relative;
+    padding: 10px 12px;
+    color: var(--gray-700);
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.nav a:hover {
+    color: var(--blue);
+}
+
+.nav a.active {
+    color: var(--blue);
+}
+
+.nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 3px;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   TARIFAS
+========================================================= */
+
+.fare-section {
+    padding: 70px 0 90px;
+    background: var(--white);
+}
+
+
+/* =========================================================
+   ENCABEZADO
+========================================================= */
+
+.fare-header {
+    margin-bottom: 45px;
+}
+
+.fare-header h1 {
+    max-width: 850px;
+    margin-bottom: 14px;
+    color: var(--blue-dark);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.fare-header p {
+    max-width: 700px;
+    margin-bottom: 25px;
+    color: var(--gray-500);
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   BOTONES DE NAVEGACIÓN
+========================================================= */
+
+.schedule-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.schedule-jump a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 18px;
+
+    color: var(--blue);
+    background: var(--blue-light);
+
+    border: 1px solid #d6eaf3;
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.schedule-jump a:hover {
+    color: var(--white);
+    background: var(--blue);
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   RECORRIDOS
+========================================================= */
+
+.fare-locality {
+    margin-bottom: 60px;
+    scroll-margin-top: 100px;
+}
+
+.fare-locality:last-child {
+    margin-bottom: 0;
+}
+
+.fare-locality-title {
+    margin-bottom: 25px;
+    padding-bottom: 14px;
+
+    color: var(--blue-dark);
+
+    border-bottom: 3px solid var(--blue);
+
+    font-size: 2rem;
+}
+
+.fare-card {
+    padding: 28px;
+
+    background: var(--gray-50);
+
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+}
+
+
+/* =========================================================
+   TABLA
+========================================================= */
+
+.fare-table-wrap {
+    overflow-x: auto;
+
+    background: var(--white);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(18, 59, 99, 0.05);
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.fare-table-wrap:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+.fare-table {
+    width: 100%;
+    min-width: 640px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    font-variant-numeric: tabular-nums;
+}
+
+.fare-table th,
+.fare-table td {
+    padding: 13px 12px;
+
+    border-bottom: 1px solid var(--gray-200);
+
+    text-align: center;
+    white-space: nowrap;
+}
+
+.fare-table tbody tr:last-child th,
+.fare-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+/* Encabezado de columnas (destinos) */
+.fare-col {
+    color: var(--white);
+    background: var(--blue-dark);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+/* Encabezado de filas (orígenes) - queda fijo al hacer scroll */
+.fare-row {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+
+    min-width: 116px;
+
+    color: var(--blue-dark);
+    background: var(--blue-light);
+
+    border-right: 1px solid #d6eaf3;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-align: left !important;
+}
+
+/* Esquina: origen abajo a la izquierda, destino arriba a la derecha */
+.fare-corner {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+
+    min-width: 116px;
+    padding: 0 !important;
+
+    background:
+        linear-gradient(to top right,
+            var(--blue-dark) calc(50% - 1px),
+            rgba(255, 255, 255, 0.35) 50%,
+            var(--blue-dark) calc(50% + 1px));
+
+    height: 56px;
+    position: sticky;
+}
+
+.fare-corner-to,
+.fare-corner-from {
+    position: absolute;
+
+    color: var(--white);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.fare-corner-to {
+    top: 8px;
+    right: 10px;
+}
+
+.fare-corner-from {
+    bottom: 8px;
+    left: 10px;
+}
+
+/* Celdas de precio */
+.fare-cell {
+    color: var(--blue-dark);
+
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.fare-empty {
+    color: var(--gray-500);
+    background: var(--gray-50);
+
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.fare-table tbody tr:hover .fare-cell:not(.fare-empty) {
+    background: var(--blue-light);
+}
+
+
+/* =========================================================
+   PROMOCIONES
+========================================================= */
+
+.fare-promos {
+    margin-top: 22px;
+    padding: 20px;
+
+    background: #fff8f1;
+
+    border: 1px solid #f5dfcc;
+    border-left: 4px solid var(--orange);
+    border-radius: 8px;
+}
+
+.fare-promos-title {
+    margin-bottom: 10px;
+
+    color: var(--blue-dark);
+
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+
+.fare-promos-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 32px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.fare-promo {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+
+    color: var(--gray-700);
+
+    font-size: 0.92rem;
+}
+
+.fare-promo-price {
+    color: var(--blue-dark);
+
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NOTA
+========================================================= */
+
+.fare-note {
+    margin-top: 40px;
+    padding: 20px;
+
+    background: var(--gray-50);
+
+    border-left: 4px solid var(--orange);
+    border-radius: 8px;
+}
+
+.fare-note strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--blue-dark);
+}
+
+.fare-note p {
+    color: var(--gray-500);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header-content {
+        min-height: 70px;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 12px 20px;
+
+        background: var(--white);
+        border-bottom: 1px solid var(--gray-200);
+
+        box-shadow: var(--shadow);
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 13px 10px;
+    }
+
+    .nav a.active::after {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .fare-section {
+        padding: 50px 0 65px;
+    }
+
+    .fare-header {
+        margin-bottom: 35px;
+    }
+
+    .fare-header h1 {
+        font-size: 2.3rem;
+    }
+
+    .fare-header p {
+        font-size: 1rem;
+    }
+
+    .fare-locality {
+        margin-bottom: 45px;
+    }
+
+    .fare-locality-title {
+        font-size: 1.7rem;
+    }
+
+    .fare-card {
+        padding: 16px 12px;
+    }
+
+    .fare-table th,
+    .fare-table td {
+        padding: 11px 9px;
+    }
+
+    .fare-row,
+    .fare-corner {
+        min-width: 96px;
+    }
+
+    .fare-promos {
+        padding: 16px;
+    }
+
+    .fare-promos-list {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

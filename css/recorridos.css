@@ -1,0 +1,668 @@
+/* ==========================================
+   RECORRIDOS
+   ========================================== */
+
+
+/* HERO */
+
+.routes-hero {
+    padding: 70px 0 45px;
+    background: #f6f8f9;
+    border-bottom: 1px solid #e3e8eb;
+}
+
+.routes-hero h1 {
+    margin: 8px 0 12px;
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    line-height: 1.1;
+}
+
+.routes-hero p {
+    max-width: 700px;
+    margin: 0;
+    color: #626d75;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* NAVEGACIÓN INTERNA */
+
+.route-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.route-jump a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 17px;
+
+    border: 1px solid #d7dfe3;
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    color: #173f63;
+    font-size: .92rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+.route-jump a:hover {
+    border-color: #173f63;
+    background: #f1f5f7;
+    transform: translateY(-1px);
+}
+
+
+/* SECCIONES */
+
+.route-section {
+    padding: 72px 0;
+}
+
+.route-section-alt {
+    background: #f7f8f9;
+}
+
+
+/* TÍTULOS */
+
+.route-heading {
+    margin-bottom: 28px;
+}
+
+.route-heading h2 {
+    margin: 8px 0 10px;
+
+    color: #26343c;
+
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+    line-height: 1.15;
+}
+
+.route-heading p {
+    max-width: 720px;
+    margin: 0;
+
+    color: #66717a;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   TARJETA DEL MAPA
+   ========================================== */
+
+.map-card {
+    overflow: hidden;
+
+    border: 1px solid #e0e6e9;
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow: 0 12px 35px rgba(20, 40, 55, .07);
+}
+
+
+/* CABECERA DEL MAPA */
+
+.map-header {
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #e7ebed;
+}
+
+.map-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #68747c;
+
+    font-size: .72rem;
+    font-weight: 700;
+
+    letter-spacing: .08em;
+}
+
+.map-header h3 {
+    margin: 0;
+
+    color: #173f63;
+
+    font-size: 1.25rem;
+}
+
+
+/* ==========================================
+   GOOGLE MY MAPS
+   ========================================== */
+
+.map-container {
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    /* panorámico en escritorio */
+    max-height: 80vh;
+    /* nunca más alto que la pantalla */
+    min-height: 320px;
+
+    background: #edf2f3;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ==========================================
+   REFERENCIAS
+   ========================================== */
+
+.map-reference {
+    padding: 24px;
+}
+
+.map-reference h3 {
+    margin: 0 0 16px;
+
+    color: #26343c;
+
+    font-size: 1rem;
+}
+
+.reference-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    overflow: hidden;
+
+    border: 1px solid #d9dfe2;
+    border-radius: 10px;
+}
+
+.reference-item {
+    display: grid;
+
+    grid-template-columns:
+        minmax(55px, 80px) 1fr 36px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 60px;
+
+    padding: 10px 14px;
+
+    color: #3d474e;
+
+    font-size: .85rem;
+}
+
+.reference-item+.reference-item {
+    border-left: 1px solid #d9dfe2;
+}
+
+.reference-item strong {
+    color: #29343b;
+}
+
+
+/* LÍNEAS */
+
+.reference-line {
+    display: block;
+
+    width: 100%;
+    height: 3px;
+}
+
+.reference-line.ida {
+    background: #2f8f55;
+}
+
+.reference-line.vuelta {
+    background: #ed7620;
+}
+
+
+/* MARCADORES */
+
+.marker {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.marker-ida {
+    background: #168a4a;
+}
+
+.marker-vuelta {
+    background: #ed6d16;
+}
+
+
+/* ==========================================
+   CÓMO UTILIZAR EL MAPA
+   ========================================== */
+
+.map-help {
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 22px;
+    padding: 24px;
+
+    border: 1px solid #e0e6e9;
+    border-radius: 16px;
+
+    background: #ffffff;
+}
+
+.help-icon {
+    display: flex;
+
+    flex: 0 0 44px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    background: #edf3f7;
+
+    color: #173f63;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.map-help h3 {
+    margin: 0 0 10px;
+
+    color: #26343c;
+
+    font-size: 1rem;
+}
+
+.map-help ul {
+    margin: 0;
+    padding-left: 18px;
+
+    color: #657078;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   AVISO
+   ========================================== */
+
+.route-notice {
+    padding: 0 0 72px;
+
+    background: #ffffff;
+}
+
+.notice-box {
+    display: flex;
+
+    gap: 16px;
+
+    padding: 22px;
+
+    border: 1px solid #e1e6e9;
+    border-radius: 14px;
+
+    background: #f7f8f9;
+}
+
+.notice-icon {
+    display: flex;
+
+    flex: 0 0 36px;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: #173f63;
+
+    color: #ffffff;
+
+    font-weight: 800;
+}
+
+.notice-box h3 {
+    margin: 0 0 5px;
+
+    color: #26343c;
+
+    font-size: 1rem;
+}
+
+.notice-box p {
+    margin: 0;
+
+    color: #68737a;
+
+    line-height: 1.6;
+}
+
+/* ==========================================
+   PARADAS EN ROSARIO
+   ========================================== */
+
+.stops-card {
+    overflow: hidden;
+    border: 1px solid #e0e6e9;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 12px 35px rgba(20, 40, 55, .07);
+}
+
+.stops-intro {
+    padding: 24px;
+    border-bottom: 1px solid #e7ebed;
+}
+
+.stops-intro h3 {
+    margin: 5px 0 8px;
+    color: #173f63;
+    font-size: 1.25rem;
+}
+
+.stops-intro p {
+    margin: 0;
+    color: #68737a;
+    line-height: 1.65;
+}
+
+
+/* CONTENIDO DE PARADAS */
+
+.stops-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stops-block {
+    padding: 28px 26px;
+}
+
+.stops-block+.stops-block {
+    border-left: 1px solid #e1e6e9;
+}
+
+.stops-direction {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #ed6d16;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .07em;
+}
+
+.stop-group {
+    margin-bottom: 22px;
+}
+
+.stop-group:last-child {
+    margin-bottom: 0;
+}
+
+.stop-group h4 {
+    margin: 0 0 5px;
+    color: #26343c;
+    font-size: .95rem;
+}
+
+.stop-group p {
+    margin: 0;
+    color: #657078;
+    line-height: 1.65;
+}
+
+
+/* DESCARGA */
+
+.download-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin: 0 24px 24px;
+    padding: 20px;
+    border: 1px solid #dce3e6;
+    border-radius: 14px;
+    background: #f7f9fa;
+}
+
+.download-icon {
+    display: flex;
+    flex: 0 0 58px;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    background: #173f63;
+    color: #ffffff;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+}
+
+.download-content {
+    flex: 1;
+}
+
+.download-content h3 {
+    margin: 2px 0 5px;
+    color: #26343c;
+    font-size: 1rem;
+}
+
+.download-content p {
+    margin: 0 0 13px;
+    color: #68737a;
+    line-height: 1.55;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 17px;
+    border-radius: 8px;
+    background: #173f63;
+    color: #ffffff;
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.download-button:hover {
+    background: #102f4a;
+    transform: translateY(-1px);
+}
+
+
+/* ADVERTENCIA */
+
+.route-warning {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    padding: 17px 20px;
+    border: 1px solid #f0d2c2;
+    border-radius: 12px;
+    background: #fff8f4;
+}
+
+.warning-icon {
+    display: flex;
+    flex: 0 0 32px;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ed6d16;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.route-warning p {
+    margin: 0;
+    color: #b34f18;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: .82rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .stops-content {
+        grid-template-columns: 1fr;
+    }
+
+    .stops-block+.stops-block {
+        border-top: 1px solid #e1e6e9;
+        border-left: 0;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .stops-block {
+        padding: 22px 18px;
+    }
+
+    .download-card {
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 18px 18px;
+        padding: 18px;
+    }
+
+    .route-warning {
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .routes-hero,
+    .route-section {
+        padding: 52px 0;
+    }
+
+    .reference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reference-item+.reference-item {
+        border-top: 1px solid #d9dfe2;
+        border-left: 0;
+    }
+
+    .map-reference {
+        padding: 18px;
+    }
+
+    .reference-item {
+        grid-template-columns:
+            60px 1fr 34px 1fr;
+    }
+
+    .map-container {
+        aspect-ratio: 4 / 5;
+        max-height: 70vh;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .route-jump {
+        gap: 8px;
+    }
+
+    .route-jump a {
+        width: 100%;
+    }
+
+    .map-header {
+        padding: 17px;
+    }
+
+    .map-help {
+        padding: 18px;
+    }
+
+    .notice-box {
+        padding: 18px;
+    }
+
+    .reference-item {
+        grid-template-columns:
+            50px 1fr 32px 1fr;
+
+        gap: 7px;
+
+        padding: 10px;
+    }
+
+}
