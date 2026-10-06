@@ -7,11 +7,12 @@
 
     <title>Horarios | Interbus</title>
 
-    <meta name="description" content="Consultá los horarios de Interbus para Álvarez y Acebal.">
-    <link rel="icon" href="/img/logo-interbus.png" type="image/x-icon">
+    <meta name="description" content="Consultá los horarios de Interbus para Álvarez, Acebal y Uranga.">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/horarios.css">
+    <link rel="icon" href="../img/logo-interbus.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/horarios.css">
 </head>
 
 <body>
@@ -20,11 +21,16 @@
 
         <div class="container header-content">
 
-            <a href="index.html" class="logo">
-                <img src="img/logo-interbus.png" alt="Interbus - Viaja con vos">
+            <a href="../index.html" class="logo">
+                <img src="../img/logo-interbus.png" alt="Interbus - Viaja con vos">
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,37 +38,39 @@
 
             <nav class="nav" id="mainNav">
 
-                <a href="index.html">
+                <a href="/index.html">
                     Inicio
                 </a>
 
-                <a href="horarios.html" class="active">
+                <a href="/pages/horarios.html" class="active">
                     Horarios
                 </a>
 
-                <a href="cuando-llega.html">
+                <a href="/pages/cuando-llega.html">
                     ¿Cuándo llega?
                 </a>
 
-                <a href="recorridos.html">
+                <a href="/pages/recorridos.html">
                     Recorridos
                 </a>
 
-                <a href="tarifas.html">
+                <a href="/pages/tarifas.html">
                     Tarifas
                 </a>
 
-                <a href="sube.html">
+                <a href="/pages/sube.html">
                     SUBE
                 </a>
 
-                <a href="contacto.html">
+                <a href="/pages/contacto.html">
                     Contacto
                 </a>
-                <a href="choferes.html">
+
+                <a href="/pages/choferes.html">
                     Choferes
                 </a>
-                <a href="taller.html">
+
+                <a href="/pages/taller.html">
                     Taller
                 </a>
 
@@ -101,10 +109,8 @@
 
                 </div>
 
-
-                <!-- HORARIOS (generados por horarios.js) -->
+                <!-- HORARIOS generados por horarios.js -->
                 <div id="schedulesContainer"></div>
-
 
                 <div class="schedule-note">
 
@@ -120,7 +126,6 @@
                     </p>
 
                 </div>
-
 
                 <div class="notice-box">
 
@@ -158,45 +163,43 @@
 
             <div class="footer-brand">
 
-                <img src="img/logo-interbus.png" alt="Interbus">
+                <img src="../img/logo-interbus.png" alt="Interbus">
 
             </div>
 
-
             <div class="footer-links">
 
-                <a href="index.html">
+                <a href="/index.html">
                     Inicio
                 </a>
 
-                <a href="horarios.html">
+                <a href="/pages/horarios.html">
                     Horarios
                 </a>
 
-                <a href="cuando-llega.html">
+                <a href="/pages/cuando-llega.html">
                     ¿Cuándo llega?
                 </a>
 
-                <a href="recorridos.html">
+                <a href="/pages/recorridos.html">
                     Recorridos
                 </a>
 
-                <a href="tarifas.html">
+                <a href="/pages/tarifas.html">
                     Tarifas
                 </a>
 
-                <a href="sube.html">
+                <a href="/pages/sube.html">
                     SUBE
                 </a>
 
-                <a href="contacto.html">
+                <a href="/pages/contacto.html">
                     Contacto
                 </a>
 
             </div>
 
         </div>
-
 
         <div class="footer-bottom">
 
@@ -205,9 +208,17 @@
                 <p>
                     © 2026 Interbus SRL. Todos los derechos reservados.
                 </p>
+
                 <p>
-                    Desarrollado por <a href="https://www.linkedin.com/in/nehuenpeyrano/" target="_blank"
-                        rel="noopener noreferrer">Nehuén Peyrano</a>.
+                    Desarrollado por
+                    <a
+                        href="https://www.linkedin.com/in/nehuenpeyrano/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Nehuén Peyrano
+                    </a>.
+                </p>
 
             </div>
 
@@ -215,8 +226,8 @@
 
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/horarios.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/horarios.js"></script>
 
 </body>
 
